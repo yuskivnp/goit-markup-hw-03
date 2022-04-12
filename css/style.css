@@ -1,0 +1,301 @@
+/* Variables */
+:root {
+  --accent-color: #2196f3;
+  --assent-color-dark: #188ce8;
+  --border-color: #ececec;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --light-text-color: #fff;
+  --dark-text-color: #000;
+  --dark-bg: #2f303a;
+  --light-bg: #f5f4fa;
+  --address-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Global styles  */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.btn {
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* Header styles */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+}
+
+.dark-logo {
+  color: var(--dark-text-color);
+}
+
+.menu-link {
+  color: var(--secondary-text-color);
+}
+
+.menu-item,
+.contact-item {
+  margin-right: 50px;
+}
+
+.menu-item:last-child,
+.contact-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link,
+.contact-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.logo,
+.active,
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.contact-address:hover,
+.contact-address:focus {
+  color: var(--accent-color);
+}
+
+.centred-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Hero section */
+.hero {
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--dark-bg);
+  padding-top: 210px;
+  padding-bottom: 190px;
+}
+
+.hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding: 10px 32px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--assent-color-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Features section */
+.features {
+  padding-bottom: 0;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.feature-item {
+  margin-right: 30px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
+}
+
+/* We do section */
+.wedo-item {
+  margin-right: 30px;
+}
+
+.wedo-item:last-child {
+  margin-right: 0;
+}
+
+/* Our team section */
+.our-team {
+  background-color: var(--light-bg);
+}
+
+.team-card {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: inherit;
+  color: var(--secondary-text-color);
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--dark-bg);
+}
+
+.light-logo {
+  color: var(--light-text-color);
+}
+
+.address {
+  font-style: inherit;
+}
+
+.post-address {
+  color: var(--light-text-color);
+}
+
+.contact-address {
+  color: var(--address-color);
+}
+
+/* Our projects section */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  background-color: var(--light-bg);
+  color: var(--secondary-text-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.active-btn {
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* DEBUGGING */
+
+/* header, footer, section, .container {
+  outline: 1px solid red;
+} */
+/* 
+.menu-list {
+  display: flex;
+}
+
+.menu-item {
+  padding-right: 50px;
+  outline: 1px solid red;
+  background-color: green;
+} */
