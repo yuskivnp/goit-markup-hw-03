@@ -31,7 +31,7 @@ body {
   color: var(--primary-text-color);
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
@@ -41,7 +41,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .section {
@@ -99,6 +99,16 @@ p {
   padding: 24px 0;
   border-bottom: 1px solid var(--border-color);
 }
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: flex;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -109,6 +119,11 @@ p {
 
 .dark-logo {
   color: var(--dark-text-color);
+}
+
+.menu-list,
+.contact-list {
+  display: flex;
 }
 
 .menu-link {
@@ -191,6 +206,11 @@ p {
   padding-bottom: 0;
 }
 
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .feature-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -201,20 +221,13 @@ p {
 }
 
 .feature-item {
-  margin-right: 30px;
-}
-
-.feature-item:last-child {
-  margin-right: 0;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 /* We do section */
-.wedo-item {
-  margin-right: 30px;
-}
-
-.wedo-item:last-child {
-  margin-right: 0;
+.wedo-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Our team section */
@@ -222,21 +235,43 @@ p {
   background-color: var(--light-bg);
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-card {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  background-color: var(--light-text-color);
+}
+
+.team-avatar {
+  margin-bottom: 30px;
 }
 
 .team-name {
   font-weight: 500;
   font-size: inherit;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 /* Footer styles */
 .footer {
+  padding: 60px 0;
   background-color: var(--dark-bg);
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .light-logo {
@@ -245,14 +280,23 @@ p {
 
 .address {
   font-style: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .post-address {
+  margin-bottom: 9px;
   color: var(--light-text-color);
 }
 
 .contact-address {
+  margin-bottom: 9px;
   color: var(--address-color);
+}
+
+.contact-address:last-child {
+  margin-bottom: 0;
 }
 
 /* Our projects section */
