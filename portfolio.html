@@ -17,7 +17,10 @@
     href="https://fonts.gstatic.com"
     crossorigin
   >
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
+  >
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -30,264 +33,272 @@
 
 <body>
   <header class="header">
-    <a
-      class="link logo"
-      href="#"
-    >
-      Web<span class="dark-logo">Studio</span>
-    </a>
-    <nav class="menu">
-      <ul class="list menu-list">
-        <li class="menu-item">
+    <div class="container">
+
+      <a
+        class="link logo"
+        href="#"
+      >
+        Web<span class="dark-logo">Studio</span>
+      </a>
+      <nav class="menu">
+        <ul class="list menu-list">
+          <li class="menu-item">
+            <a
+              class="link menu-link"
+              href="index.html"
+            >Studio</a>
+          </li>
+          <li class="menu-item">
+            <a
+              class="link menu-link active"
+              href="#"
+            >Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a
+              class="link menu-link"
+              href="#"
+            >Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="list contact-list">
+        <li class="contact-item">
           <a
-            class="link menu-link"
-            href="index.html"
-          >Studio</a>
+            class="link contact-link"
+            href="mailto:info@devstudio.com"
+          >info@devstudio.com</a>
         </li>
-        <li class="menu-item">
+        <li class="contact-item">
           <a
-            class="link menu-link active"
-            href="#"
-          >Portfolio</a>
-        </li>
-        <li class="menu-item">
-          <a
-            class="link menu-link"
-            href="#"
-          >Contacts</a>
+            class="link contact-link"
+            href="tel:+380961111111"
+          >+38 096 111 11 11</a>
         </li>
       </ul>
-    </nav>
-    <ul class="list contact-list">
-      <li>
-        <a
-          class="link contact-link"
-          href="mailto:info@devstudio.com"
-        >info@devstudio.com</a>
-      </li>
-
-      <li>
-        <a
-          class="link contact-link"
-          href="tel:+380961111111"
-        >+38 096 111 11 11</a>
-      </li>
-    </ul>
+    </div>
   </header>
 
   <main>
     <section class="our-projects">
-      <h1 class="hidden">Our projects</h1>
-      <ul class="list filters">
-        <li class="filter-item">
-          <button
-            class="btn active-btn filter-btn"
-            type="button"
-          >
-            All
-          </button>
-        </li>
-        <li class="filter-item">
-          <button
-            class="btn filter-btn"
-            type="button"
-          >
-            Web-sites
-          </button>
-        </li>
-        <li class="filter-item">
-          <button
-            class="btn filter-btn"
-            type="button"
-          >
-            Applications
-          </button>
-        </li>
-        <li class="filter-item">
-          <button
-            class="btn filter-btn"
-            type="button"
-          >
-            Design
-          </button>
-        </li>
-        <li class="filter-item">
-          <button
-            class="btn filter-btn"
-            type="button"
-          >
-            Marketing
-          </button>
-        </li>
-      </ul>
+      <div class="container">
+        <h1 class="hidden">Our projects</h1>
+        <ul class="list filters">
+          <li class="filter-item">
+            <button
+              class="btn active-btn filter-btn"
+              type="button"
+            >
+              All
+            </button>
+          </li>
+          <li class="filter-item">
+            <button
+              class="btn filter-btn"
+              type="button"
+            >
+              Web-sites
+            </button>
+          </li>
+          <li class="filter-item">
+            <button
+              class="btn filter-btn"
+              type="button"
+            >
+              Applications
+            </button>
+          </li>
+          <li class="filter-item">
+            <button
+              class="btn filter-btn"
+              type="button"
+            >
+              Design
+            </button>
+          </li>
+          <li class="filter-item">
+            <button
+              class="btn filter-btn"
+              type="button"
+            >
+              Marketing
+            </button>
+          </li>
+        </ul>
 
-      <ul class="list projects">
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project1.jpg"
-              alt="Web-site Techno-crack"
-              width="370"
-              height="294"
+        <ul class="list projects">
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Techno-crack</h2>
-            <p class="project-description">Web-site</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project2.jpg"
-              alt="Design Poster New Orlean vs Golden Star"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project1.jpg"
+                alt="Web-site Techno-crack"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Techno-crack</h2>
+              <p class="project-description">Web-site</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Poster New Orlean vs Golden Star</h2>
-            <p class="project-description">Design</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project3.jpg"
-              alt="Application Restaurant Seafood"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project2.jpg"
+                alt="Design Poster New Orlean vs Golden Star"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Poster New Orlean vs Golden Star</h2>
+              <p class="project-description">Design</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Restaurant Seafood</h2>
-            <p class="project-description">Application</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project4.jpg"
-              alt="Marketing Project Prime"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project3.jpg"
+                alt="Application Restaurant Seafood"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Restaurant Seafood</h2>
+              <p class="project-description">Application</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Project Prime</h2>
-            <p class="project-description">Marketing</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project5.jpg"
-              alt="Application Project Boxes"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project4.jpg"
+                alt="Marketing Project Prime"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Project Prime</h2>
+              <p class="project-description">Marketing</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Project Boxes</h2>
-            <p class="project-description">Application</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project6.jpg"
-              alt="Web-site Inspiration has no Borders"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project5.jpg"
+                alt="Application Project Boxes"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Project Boxes</h2>
+              <p class="project-description">Application</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Inspiration has no Borders</h2>
-            <p class="project-description">Web-site</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project7.jpg"
-              alt="Design Magazine Limited Edition"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project6.jpg"
+                alt="Web-site Inspiration has no Borders"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Inspiration has no Borders</h2>
+              <p class="project-description">Web-site</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Magazine Limited Edition</h2>
-            <p class="project-description">Design</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project8.jpg"
-              alt="Marketing Project LAB"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project7.jpg"
+                alt="Design Magazine Limited Edition"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Magazine Limited Edition</h2>
+              <p class="project-description">Design</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Project LAB</h2>
-            <p class="project-description">Marketing</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a
-            class="link project-link"
-            href="#"
-          >
-            <img
-              class="project-logo"
-              src="images/portfolio/project9.jpg"
-              alt="Application Growing Business"
-              width="370"
-              height="294"
+              <img
+                class="project-logo"
+                src="images/portfolio/project8.jpg"
+                alt="Marketing Project LAB"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Project LAB</h2>
+              <p class="project-description">Marketing</p>
+            </a>
+          </li>
+          <li class="project-item">
+            <a
+              class="link project-link"
+              href="#"
             >
-            <h2 class="project-name">Growing Business</h2>
-            <p class="project-description">Application</p>
-          </a>
-        </li>
-      </ul>
+              <img
+                class="project-logo"
+                src="images/portfolio/project9.jpg"
+                alt="Application Growing Business"
+                width="370"
+                height="294"
+              >
+              <h2 class="project-name">Growing Business</h2>
+              <p class="project-description">Application</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </section>
   </main>
 
   <footer class="footer">
-    <a
-      class="link logo"
-      href="#"
-    >
-      Web<span class="light-logo">Studio</span>
-    </a>
-    <address class="address">
-      <p class="post-address">Kyiv, 26 Lesia Ukrainka Ave.</p>
+    <div class="container">
       <a
-        class="link contact-address"
-        href="mailto:info@example.com"
-      > info@example.com </a>
-      <a
-        class="link contact-address"
-        href="tel:+380991111111"
-      > +38 099 111 11 11 </a>
-    </address>
+        class="link logo"
+        href="#"
+      >
+        Web<span class="light-logo">Studio</span>
+      </a>
+      <address class="address">
+        <p class="post-address">Kyiv, 26 Lesia Ukrainka Ave.</p>
+        <a
+          class="link contact-address"
+          href="mailto:info@example.com"
+        > info@example.com </a>
+        <a
+          class="link contact-address"
+          href="tel:+380991111111"
+        > +38 099 111 11 11 </a>
+      </address>
+    </div>
   </footer>
 </body>
 
