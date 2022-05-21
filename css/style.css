@@ -81,9 +81,8 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -173,11 +172,11 @@ img {
 
 /* Hero section */
 .hero {
+  padding-top: 210px;
+  padding-bottom: 190px;
   letter-spacing: 0.06em;
   text-align: center;
   background-color: var(--dark-bg);
-  padding-top: 210px;
-  padding-bottom: 190px;
 }
 
 .hero-title {
@@ -191,10 +190,10 @@ img {
 }
 
 .hero-btn {
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -248,16 +247,16 @@ img {
 }
 
 .team-card {
+  flex-basis: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
+  margin-right: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
   background-color: var(--light-text-color);
-  margin-right: 30px;
 }
 
 .team-card:last-child {
@@ -269,10 +268,10 @@ img {
 }
 
 .team-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: inherit;
   color: var(--secondary-text-color);
-  margin-bottom: 10px;
 }
 
 /* Footer styles */
@@ -291,10 +290,10 @@ img {
 }
 
 .address {
-  font-style: inherit;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-style: inherit;
 }
 
 .post-address {
@@ -312,11 +311,6 @@ img {
 }
 
 /* Our projects section */
-.our-projects {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
 .filters {
   display: flex;
   margin-bottom: 50px;
@@ -349,6 +343,13 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
+}
+
+.project-caption {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-color-portfolio);
+  border-right: 1px solid var(--border-color-portfolio);
+  border-bottom: 1px solid var(--border-color-portfolio);
 }
 
 .project-item:not(:nth-child(3n)) {
